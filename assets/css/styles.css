@@ -139,6 +139,7 @@ section {
 section img {
 	padding: 15px;
 	border: 2px solid #eee;
+	max-width: 70%;
 }
 
 #contact {
