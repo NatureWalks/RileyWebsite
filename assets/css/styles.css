@@ -14,6 +14,81 @@ body {
 	background-color: #1A1A1A;
 }
 
+
+html, body {
+	width: 100%;
+	height: 100%;
+	margin: 0px;
+}
+
+
+nav {
+	border-bottom: 1px solid #EAEAEB;
+	text-align: right;
+	height: 70px;
+	line-height: 70px;
+}
+
+.menu {
+	margin: 0 30px 0 0;
+}
+
+.menu a {
+	text-decoration: none;
+	color: #54D17A;
+	margin: 0 10px;
+	line-height: 70px;
+	font-size: 20px;
+	clear: right;
+}
+
+label {
+	margin: 0 40px 0 0;
+	font-size: 26px;
+	line-height: 70px;
+	display: none;
+	width: 26px;
+	float: right;
+	color: #54D17A;
+	
+}
+
+#toggle {
+	display: none;
+}
+
+@media only screen and (max-width: 500px) {
+	label {
+		display: block;
+		cursor: pointer;
+	}
+
+	.menu {
+		text-align: center;
+		width: 100%;
+		display: none;
+	}
+
+	.menu a {
+		
+		display: block;
+		border-bottom: 1px solid #EAEAEB;
+		margin: 0;
+	}
+
+	#toggle:checked + .menu {
+		display: block;
+	}
+}
+
+
+
+
+
+
+
+
+
 nav {
 	color: white;
 	background-color: black;
@@ -58,7 +133,7 @@ header {
   flex-direction: column;
   width: 100%;
   height: 100vh;
-  background: 
+  background:  
   url("https://res.cloudinary.com/naturewalks/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1573609532/Riley%27s%20Site/IMG_5948_onlx0q.jpg") center no-repeat;
   background-size: cover;
 }
@@ -182,4 +257,52 @@ h3 {
 	margin: 3px;
 	font-size: 25px;
 	padding-bottom: 10px;
+}
+
+
+@media only screen and (max-width: 500px) {
+	#about p{
+		color: black;
+	}
+
+	#about {
+		width: 90vw;
+		height: 90vh;
+		display: flex;
+		flex-direction: column;
+		padding: 2%;
+	}
+
+	#about img {
+		max-width: 95%;
+	}
+
+	#about2 {
+		width: 90vw;
+		height: 90vh;
+		display: flex;
+		flex-direction: column;
+		padding: 2%;
+		
+	}
+
+	#about2 p {
+		font-size: 12px;
+	}
+
+	#about2 img {
+		max-width: 95%;
+	}
+
+	#contact {
+		width: 90vw;
+		height: 90vh;
+		display: flex;
+		flex-direction: column;
+		padding: 2%;
+	}
+
+	#contact img {
+		max-width: 95%;
+	}
 }
